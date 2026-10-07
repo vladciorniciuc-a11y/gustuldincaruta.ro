@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="ro" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gustul din Căruță | Bufet Tradițional & Gourmet pentru Evenimente</title>
+  <meta name="description" content="Căruță tradițională cu bunătăți boierești, Jamon Iberico la suport și live cooking pentru nunți, botezuri și evenimente memorabile. Rezervări 2026 - 2028.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#FDF8F3',
+              100: '#F7EDE1',
+              200: '#EBD7C0',
+              300: '#DCBD99',
+              400: '#C79A6B',
+              500: '#AF7641',
+              600: '#8C5628',
+              700: '#6E401B',
+              800: '#4D2B11',
+              900: '#321A08',
+            },
+            warm: {
+              50: '#FAF8F5',
+              100: '#F5F0E8',
+              200: '#EBE2D5',
+              300: '#DDD0BE',
+              400: '#C7B197',
+              500: '#A98F71',
+            },
+            wa: {
+              green: '#25D366',
+              dark: '#128C7E',
+              hover: '#20BA5A',
+              light: '#E7FCE8'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            vintage: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    /* Efecte luminoase & carduri aerisite */
+    .hero-pattern {
+      background-color: #FAF8F5;
+      background-image: radial-gradient(#E8DFD1 1.2px, transparent 1.2px);
+      background-size: 28px 28px;
+    }
+
+    .wa-pulse {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+      animation: wa-pulse-animation 2s infinite;
+    }
+
+    @keyframes wa-pulse-animation {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+      }
+      70% {
+        box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    /* Scrollbar fin și luminos */
+    ::-webkit-scrollbar {
+      width: 9px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F5F0E8;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C79A6B;
+      border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #AF7641;
+    }
+  </style>
+</head>
+<body class="bg-warm-50 text-stone-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- TOP BANNER: Mesaj vesel & deschidere calendar evenimente -->
+  <div class="bg-gradient-to-r from-amber-700 via-brand-600 to-amber-700 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-sm flex items-center justify-center gap-2">
+    <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+    <span>✨ <strong>Calendar 2026 - 2028:</strong> Rezervările pentru nunți și evenimente festive sunt deschise!</span>
+    <a href="#calculator" class="underline hover:text-amber-100 ml-2 font-bold hidden sm:inline">Verifică data ta &rarr;</a>
+  </div>
+
+  <!-- HEADER ALB, LUMINOS ȘI AERISIT -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200/80 shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo Branding -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-brand-600 p-0.5 shadow-md shadow-brand-500/20 group-hover:scale-105 transition duration-300">
+          <div class="w-full h-full bg-white rounded-[14px] flex items-center justify-center">
+            <i data-lucide="utensils" class="w-6 h-6 text-brand-600"></i>
+          </div>
+        </div>
+        <div>
+          <span class="block font-serif text-xl sm:text-2xl font-bold tracking-tight text-stone-900 group-hover:text-brand-600 transition">Gustul din Căruță</span>
+          <span class="block text-[11px] tracking-widest uppercase text-brand-600 font-semibold font-sans">Tradițional & Gourmet</span>
+        </div>
+      </a>
+
+      <!-- Nav Links Desktop -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-stone-600">
+        <a href="#concept" class="hover:text-brand-600 transition">Concept</a>
+        <a href="#meniu" class="hover:text-brand-600 transition">Ce Conține Căruța</a>
+        <a href="#calculator" class="hover:text-brand-600 transition flex items-center gap-1.5 text-amber-700 font-bold bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+          <i data-lucide="sparkles" class="w-4 h-4 text-amber-600"></i> Configurator
+        </a>
+        <a href="#pachete" class="hover:text-brand-600 transition">Pachete</a>
+        <a href="#galerie" class="hover:text-brand-600 transition">Galerie</a>
+        <a href="#faq" class="hover:text-brand-600 transition">Întrebări</a>
+      </nav>
+
+      <!-- CTA WHATSAPP PRINCIPAL ÎN HEADER (Super Vizibil & Contrastant) -->
+      <div class="flex items-center gap-3">
+        <a href="javascript:void(0)" onclick="openWhatsApp('Salut! Doresc să aflu disponibilitatea căruței pentru un eveniment.')"
+           class="inline-flex items-center gap-2.5 bg-wa-green hover:bg-wa-hover text-white font-bold px-5 py-2.5 rounded-full text-sm shadow-md shadow-wa-green/30 hover:shadow-lg hover:-translate-y-0.5 transition active:scale-95 group">
+          <!-- Official WhatsApp SVG -->
+          <svg class="w-5 h-5 fill-current flex-shrink-0" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>WhatsApp Rapid</span>
+        </a>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-xl text-stone-700 hover:bg-stone-100 focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 pt-3 pb-6 space-y-3 shadow-lg">
+      <a href="#concept" class="block py-2 text-stone-700 font-semibold hover:text-brand-600">Conceptul Nostru</a>
+      <a href="#meniu" class="block py-2 text-stone-700 font-semibold hover:text-brand-600">Ce Conține Căruța</a>
+      <a href="#calculator" class="block py-2 text-amber-700 font-bold">✨ Configurator Ofertă WhatsApp</a>
+      <a href="#pachete" class="block py-2 text-stone-700 font-semibold hover:text-brand-600">Pachete & Prețuri</a>
+      <a href="#galerie" class="block py-2 text-stone-700 font-semibold hover:text-brand-600">Galerie Foto</a>
+      <a href="#faq" class="block py-2 text-stone-700 font-semibold hover:text-brand-600">Întrebări Frecvente</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION: Luminos, Cald, Festiv -->
+  <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-16 sm:py-24 hero-pattern">
+    
+    <!-- Background Hero Real (Imaginea de fundal sub texte și CTA) -->
+    <div class="absolute inset-0 z-0">
+      <img src="images/hero.jpg" 
+           onerror="this.src='https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=2000&q=80'" 
+           alt="Căruță tradițională evenimente" 
+           class="w-full h-full object-cover object-center filter brightness-95">
+      <!-- Gradient luminos garantat prin CSS (nu depinde de parsarea claselor arbitrare din CDN) -->
+      <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(255,255,255,0.72) 0%, rgba(255,255,255,0.38) 45%, rgba(250,248,245,0.95) 100%);"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      
+      <!-- CARD HERO MAT / FROSTED PENTRU CONTRAST & CITIBILITATE MAXIMĂ (100% Lizibil pe orice ecran) -->
+      <div class="bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-10 lg:p-12 border-2 border-stone-200/90 shadow-2xl shadow-stone-900/10">
+        
+        <!-- Badge vesel și elegant -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-amber-50 border border-amber-300 text-amber-950 text-xs sm:text-sm font-black mb-5 shadow-sm">
+          <i data-lucide="crown" class="w-4 h-4 text-amber-600"></i>
+          <span>Catering Tradițional & Spectacol Culinar la Nivel de Artă</span>
+        </div>
+
+        <!-- Titlu Principal Clar & Contrastant -->
+        <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-black text-stone-950 tracking-tight leading-[1.15] mb-5">
+          Gustul Autentic de Altădată, <br class="hidden sm:inline">
+          <span class="text-brand-600 font-vintage italic font-medium">Servit Boierește</span> la Evenimentul Tău
+        </h1>
+
+        <!-- Subtitlu Cald & Super Contrastant -->
+        <p class="max-w-2xl mx-auto text-sm sm:text-lg text-stone-800 font-semibold leading-relaxed mb-8">
+          Încântă-ți invitații cu o <strong class="text-stone-950 font-extrabold">căruță rustică autentică din lemn</strong>, încărcată cu bunătăți tradiționale românești, brânzeturi maturate și <strong class="text-stone-950 font-extrabold">Jamon Iberico feliat live pe suport</strong>.
+        </p>
+
+        <!-- Butoane CTA Principale - Contrast Maxim -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto sm:max-w-none">
+          
+          <!-- CTA 1: Buton verde WhatsApp Vibrant -->
+          <a href="javascript:void(0)" onclick="openWhatsApp('Bună ziua! Aș dori detalii și disponibilitate pentru Gustul din Căruță la un eveniment.')"
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-wa-green hover:bg-wa-hover text-white font-black px-8 py-4 rounded-2xl shadow-xl shadow-wa-green/30 hover:-translate-y-1 transition text-base wa-pulse">
+            <svg class="w-6 h-6 fill-current flex-shrink-0" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>Discută direct pe WhatsApp</span>
+          </a>
+
+          <!-- CTA 2: Calculator / Configurator (Contrast Maxim: Buton Închis la Culoare pe Card Alb) -->
+          <a href="#calculator" 
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-stone-900 hover:bg-stone-800 text-white font-black px-8 py-4 rounded-2xl shadow-md hover:-translate-y-1 transition text-base">
+            <i data-lucide="calculator" class="w-5 h-5 text-amber-400"></i>
+            <span>Configurează Pachetul Tău</span>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Repere de Încredere & Carduri Mici Luminoase (Situate elegant sub cardul principal) -->
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
+        
+        <div class="p-4 rounded-2xl bg-white border border-stone-200/80 shadow-sm flex items-start gap-3">
+          <div class="p-2.5 rounded-xl bg-amber-50 text-amber-700">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-stone-900 text-sm">Degustare Inclusă</h4>
+            <p class="text-xs text-stone-500 mt-0.5">Pentru miri înainte de nuntă</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-white border border-stone-200/80 shadow-sm flex items-start gap-3">
+          <div class="p-2.5 rounded-xl bg-emerald-50 text-emerald-700">
+            <i data-lucide="truck" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-stone-900 text-sm">Deplasare la Locație</h4>
+            <p class="text-xs text-stone-500 mt-0.5">Montaj și servire completă</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-white border border-stone-200/80 shadow-sm flex items-start gap-3">
+          <div class="p-2.5 rounded-xl bg-rose-50 text-rose-700">
+            <i data-lucide="knife" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-stone-900 text-sm">Live Carving Show</h4>
+            <p class="text-xs text-stone-500 mt-0.5">Jamon feliat proaspăt la vedere</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-white border border-stone-200/80 shadow-sm flex items-start gap-3">
+          <div class="p-2.5 rounded-xl bg-sky-50 text-sky-700">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-stone-900 text-sm">Gust 100% Autentic</h4>
+            <p class="text-xs text-stone-500 mt-0.5">Mezeluri artizanale de casă</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONCEPTUL: Căruța ca Punct Central de Atracție -->
+  <section id="concept" class="py-24 bg-white relative border-t border-stone-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Text Despre Concept -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 text-brand-600 text-xs uppercase tracking-widest font-extrabold bg-brand-50 px-3 py-1 rounded-full border border-brand-200">
+            <i data-lucide="award" class="w-3.5 h-3.5"></i> Experiență Gastronomică Memorabilă
+          </div>
+          
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 leading-tight">
+            Mai mult decât un bufet. <br>
+            <span class="text-brand-600 font-vintage italic font-medium">Atracția principală</span> a nunții tale.
+          </h2>
+          
+          <p class="text-stone-600 leading-relaxed text-base sm:text-lg">
+            La nunți și aniversări, invitații își amintesc două aspecte esențiale: muzica bună și <strong>mâncarea desăvârșită</strong>. „Gustul din Căruță” transformă clasicul aperitiv într-un spectacol culinar boieresc plin de viață și culoare.
+          </p>
+
+          <p class="text-stone-600 leading-relaxed text-sm sm:text-base">
+            Căruța noastră originală din lemn devine locul unde oaspeții ciocnesc o băutură tradițională, savurează o felie fină de Jamon tăiată pe loc și se bucură de cele mai alese brânzeturi și mezeluri din Banat și din toată țara.
+          </p>
+
+          <div class="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-5 rounded-2xl bg-warm-50 border border-stone-200">
+              <div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center text-amber-700 mb-3">
+                <i data-lucide="camera" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-bold text-stone-900 text-base">Decor Instagrameabil</h4>
+              <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">Lemn masiv, ștergare tradiționale, lădițe rustice și lumini calde pentru poze spectaculoase.</p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-warm-50 border border-stone-200">
+              <div class="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-700 mb-3">
+                <i data-lucide="flame" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-bold text-stone-900 text-base">Spectacol Culinar Live</h4>
+              <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">Feliere profesională de Jamon la suport, platouri îmbelșugate și servire impecabilă.</p>
+            </div>
+          </div>
+
+          <div class="pt-3">
+            <a href="javascript:void(0)" onclick="openWhatsApp('Bună! Aș dori să aflu mai multe detalii despre conceptul căruței și ce include pachetul.')"
+               class="inline-flex items-center gap-2 text-brand-700 hover:text-brand-800 font-bold text-sm group">
+              <span>Discută ideea evenimentului tău pe WhatsApp</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Colaj Imagini Luminoase -->
+        <div class="lg:col-span-6">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-4">
+              <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[4/5]">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" 
+                     alt="Platouri tradiționale" 
+                     class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              </div>
+              <div class="p-5 rounded-2xl bg-white border border-stone-200 shadow-md text-center">
+                <span class="block text-3xl font-extrabold font-serif text-brand-600">100%</span>
+                <span class="text-xs text-stone-500 uppercase tracking-wider font-semibold">Aprecieri de la Invitați</span>
+              </div>
+            </div>
+
+            <div class="space-y-4 pt-8">
+              <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-50 to-warm-100 border border-amber-200 shadow-md text-center">
+                <span class="block text-2xl font-bold font-serif text-amber-800">2026 - 2028</span>
+                <span class="text-xs text-stone-600 uppercase tracking-wider font-semibold">Rezervări Deschise</span>
+              </div>
+              <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[4/5]">
+                <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=80" 
+                     alt="Bufet aperitive evenimente" 
+                     class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CE CONȚINE CĂRUȚA: Carduri Albe & Fotografii Apetisante -->
+  <section id="meniu" class="py-24 bg-warm-50 relative border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-600 text-xs uppercase tracking-widest font-extrabold bg-white px-3 py-1 rounded-full border border-stone-200">Meniu & Delicii</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900 mt-3 mb-4">Ce găsești în căruța noastră?</h2>
+        <p class="text-stone-600 text-sm sm:text-base">Fiecare produs este selectat cu grijă de la producători locali și furnizori premiați. Totul este prezentat spectaculos pe blaturi din lemn masiv și veselă tradițională.</p>
+      </div>
+
+      <!-- Grid 3 Categorii Mari de Preparate -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Pilon 1: Tradițional Românesc -->
+        <div class="bg-white rounded-3xl border border-stone-200 shadow-md hover:shadow-xl transition duration-300 group flex flex-col overflow-hidden">
+          <div class="relative h-60 overflow-hidden">
+            <img src="images/bufet-traditional.jpg" 
+                 onerror="this.src='https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80'" 
+                 alt="Bufet tradițional mezeluri și brânzeturi" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-4 left-4 bg-white/95 text-brand-700 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm border border-brand-200">
+              Autentic Românesc
+            </span>
+          </div>
+          <div class="p-7 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-stone-900 mb-2">Bufetul Tradițional</h3>
+              <p class="text-stone-600 text-sm mb-5 leading-relaxed">
+                Mesele bogate de sărbătoare cu gustul pe care îl caută fiecare invitat la o nuntă.
+              </p>
+              <ul class="space-y-3 text-sm text-stone-700 mb-8">
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Pastramă aromată de oaie și porc</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Cârnați afumați tradiționali & tobă de casă</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Slăninuță afumată cu boia & ceapă roșie</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Brânză de burduf, telemea veche & caș proaspăt</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Zacuscă la ceaun, murături asortate & pâine caldă</span>
+                </li>
+              </ul>
+            </div>
+            <a href="javascript:void(0)" onclick="openWhatsApp('Bună! Aș dori meniul detaliat pentru Bufetul Tradițional Românesc.')"
+               class="block text-center py-3 px-4 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-800 text-xs font-bold uppercase tracking-wider transition">
+              Cere Meniul Tradițional pe WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Pilon 2: Gourmet Jamon Iberico Carving (CARDUL VEDETĂ) -->
+        <div class="bg-white rounded-3xl border-2 border-brand-500 shadow-xl shadow-brand-500/10 flex flex-col overflow-hidden relative transform md:-translate-y-2">
+          <div class="bg-gradient-to-r from-amber-500 to-brand-600 text-white text-center py-1.5 text-xs font-extrabold uppercase tracking-wider">
+            ⭐ Vedeta Evenimentului
+          </div>
+          <div class="relative h-60 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" 
+                 alt="Jamon feliat live" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-4 left-4 bg-amber-500 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+              Live Carving
+            </span>
+          </div>
+          <div class="p-7 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-stone-900 mb-2">Jamon Iberico & Brânzeturi Fine</h3>
+              <p class="text-stone-600 text-sm mb-5 leading-relaxed">
+                Rafinament gourmet internațional feliat live pe suport profesional chiar în fața oaspeților.
+              </p>
+              <ul class="space-y-3 text-sm text-stone-700 mb-8">
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
+                  <span>Pulpă întreagă Jamon Iberico / Serrano la suport</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
+                  <span>Feliere live continuă pe durata primirii</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
+                  <span>Selecție brânzeturi maturate, brie, gouda & parmezan</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
+                  <span>Nuci, struguri, smochine, măsline marinate & grisine</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
+                  <span>Miere bio și sosuri gourmet asortate</span>
+                </li>
+              </ul>
+            </div>
+            <a href="javascript:void(0)" onclick="openWhatsApp('Bună! Mă interesează pachetul cu Jamon Iberico feliat live la suport.')"
+               class="block text-center py-3.5 px-4 rounded-xl bg-wa-green hover:bg-wa-hover text-white text-xs font-extrabold uppercase tracking-wider shadow-md shadow-wa-green/30 transition">
+              Solicită Jamon Show pe WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Pilon 3: Proțap Festiv -->
+        <div class="bg-white rounded-3xl border border-stone-200 shadow-md hover:shadow-xl transition duration-300 group flex flex-col overflow-hidden">
+          <div class="relative h-60 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" 
+                 alt="Carne la proțap" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-4 left-4 bg-white/95 text-brand-700 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm border border-brand-200">
+              La Cerere
+            </span>
+          </div>
+          <div class="p-7 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-stone-900 mb-2">Proțap Festiv & Grill</h3>
+              <p class="text-stone-600 text-sm mb-5 leading-relaxed">
+                Carne fragedă rumenită la jar pentru petreceri în aer liber, corturi de evenimente sau conace.
+              </p>
+              <ul class="space-y-3 text-sm text-stone-700 mb-8">
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Purceluș sau berbecuț rumenit lent la proțap</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Mici boierești preparați după rețetă proprie</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Costițe suculente marinate & legume la grătar</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Muștar artizanal, pâine caldă și mujdei de casă</span>
+                </li>
+              </ul>
+            </div>
+            <a href="javascript:void(0)" onclick="openWhatsApp('Bună! Aș dori informații despre pachetul cu Proțap Festiv & Grill.')"
+               class="block text-center py-3 px-4 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-800 text-xs font-bold uppercase tracking-wider transition">
+              Cere Ofertă Proțap pe WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CALCULATOR / CONFIGURATOR INTERACTIV WHATSAPP (Card Alb Curat) -->
+  <section id="calculator" class="py-24 bg-white relative border-t border-stone-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Card Formular Alb Elegant -->
+      <div class="bg-warm-50 border-2 border-stone-200/90 rounded-3xl p-6 sm:p-12 shadow-xl relative overflow-hidden">
+        
+        <div class="text-center mb-10">
+          <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+            <i data-lucide="sparkles" class="w-4 h-4 text-amber-600"></i> Configurator Ofertă în 1 Minut
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mb-3">Compune Ofertă Ta Personalizată</h2>
+          <p class="text-stone-600 text-sm sm:text-base max-w-xl mx-auto">
+            Alege opțiunile pentru evenimentul tău, iar sistemul îți va genera instant pe WhatsApp mesajul complet pentru verificare rapidă.
+          </p>
+        </div>
+
+        <form id="offerForm" onsubmit="handleFormSubmit(event)" class="space-y-8">
+          
+          <!-- Pas 1: Tip Eveniment -->
+          <div>
+            <label class="block text-xs uppercase tracking-wider font-extrabold text-stone-800 mb-3">
+              1. Ce fel de eveniment organizezi?
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <label class="cursor-pointer">
+                <input type="radio" name="eventType" value="Nuntă" checked class="peer sr-only">
+                <div class="p-4 rounded-2xl border-2 border-stone-300 bg-white text-center peer-checked:border-brand-700 peer-checked:bg-amber-100/90 peer-checked:text-stone-950 peer-checked:shadow-md hover:border-stone-500 transition shadow-sm">
+                  <i data-lucide="heart" class="w-6 h-6 mx-auto mb-2 text-rose-600"></i>
+                  <span class="block text-sm font-extrabold text-stone-900">Nuntă</span>
+                </div>
+              </label>
+
+              <label class="cursor-pointer">
+                <input type="radio" name="eventType" value="Botez" class="peer sr-only">
+                <div class="p-4 rounded-2xl border-2 border-stone-300 bg-white text-center peer-checked:border-brand-700 peer-checked:bg-amber-100/90 peer-checked:text-stone-950 peer-checked:shadow-md hover:border-stone-500 transition shadow-sm">
+                  <i data-lucide="baby" class="w-6 h-6 mx-auto mb-2 text-sky-600"></i>
+                  <span class="block text-sm font-extrabold text-stone-900">Botez</span>
+                </div>
+              </label>
+
+              <label class="cursor-pointer">
+                <input type="radio" name="eventType" value="Aniversare / Cununie" class="peer sr-only">
+                <div class="p-4 rounded-2xl border-2 border-stone-300 bg-white text-center peer-checked:border-brand-700 peer-checked:bg-amber-100/90 peer-checked:text-stone-950 peer-checked:shadow-md hover:border-stone-500 transition shadow-sm">
+                  <i data-lucide="glass-water" class="w-6 h-6 mx-auto mb-2 text-amber-600"></i>
+                  <span class="block text-sm font-extrabold text-stone-900">Aniversare</span>
+                </div>
+              </label>
+
+              <label class="cursor-pointer">
+                <input type="radio" name="eventType" value="Corporate / Festival" class="peer sr-only">
+                <div class="p-4 rounded-2xl border-2 border-stone-300 bg-white text-center peer-checked:border-brand-700 peer-checked:bg-amber-100/90 peer-checked:text-stone-950 peer-checked:shadow-md hover:border-stone-500 transition shadow-sm">
+                  <i data-lucide="briefcase" class="w-6 h-6 mx-auto mb-2 text-emerald-700"></i>
+                  <span class="block text-sm font-extrabold text-stone-900">Corporate</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Pas 2: Număr Invitați & Perioada (cu Data Exactă) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-white p-6 rounded-2xl border-2 border-stone-200 shadow-sm">
+            
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <label class="block text-xs uppercase tracking-wider font-extrabold text-stone-800">
+                  2. Număr estimat de invitați:
+                </label>
+                <span id="guestCountDisplay" class="bg-amber-400 text-stone-950 text-sm font-black px-3 py-1 rounded-lg border border-amber-500 shadow-sm">
+                  280 persoane
+                </span>
+              </div>
+              <input type="range" id="guestRange" min="30" max="400" step="10" value="280"
+                     oninput="document.getElementById('guestCountDisplay').innerText = this.value + ' persoane'"
+                     class="w-full h-3 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-brand-600 mt-2">
+              <div class="flex justify-between text-[11px] text-stone-600 mt-2 font-bold">
+                <span>30 (Intim)</span>
+                <span>150</span>
+                <span class="text-brand-700 font-extrabold">280</span>
+                <span>400+</span>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-extrabold text-stone-800 mb-2">
+                3. Data Evenimentului (Exactă sau Sezon):
+              </label>
+              
+              <!-- Opțiune Data Exactă -->
+              <div class="mb-2.5">
+                <div class="relative">
+                  <input type="date" id="exactEventDate" 
+                         class="w-full bg-stone-50 border-2 border-stone-300 rounded-xl px-4 py-2 text-sm text-stone-900 font-bold focus:outline-none focus:border-brand-600 focus:bg-white transition"
+                         placeholder="Alege data exactă">
+                </div>
+                <span class="text-[11px] text-stone-500 block mt-1">Poți selecta data fixă direct din calendar</span>
+              </div>
+
+              <!-- Opțiune Alternativă Sezon -->
+              <div>
+                <select id="eventPeriod" class="w-full bg-warm-50 border-2 border-stone-300 rounded-xl px-4 py-2 text-xs text-stone-800 font-bold focus:outline-none focus:border-brand-600">
+                  <option value="">-- Sau alege un sezon estimativ --</option>
+                  <option value="Sezon 2026 (Urgent / Ultimele date libere)">Sezon 2026 (Ultimele date libere)</option>
+                  <option value="Sezon 2027 (Primăvară / Vară)" selected>Sezon 2027 (Primăvară / Vară)</option>
+                  <option value="Sezon 2027 (Toamnă)">Sezon 2027 (Toamnă)</option>
+                  <option value="Sezon 2028 (Rezervare timpurie)">Sezon 2028 (Rezervare timpurie)</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Pas 3: Servicii și Opțiuni Dorite -->
+          <div>
+            <label class="block text-xs uppercase tracking-wider font-extrabold text-stone-800 mb-3">
+              4. Ce servicii dorești să includem în ofertă?
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              
+              <label class="cursor-pointer">
+                <input type="checkbox" id="optTrad" value="Căruță Tradițională Românească" checked class="peer sr-only">
+                <div class="p-4 rounded-2xl border-2 border-stone-300 bg-white peer-checked:border-brand-700 peer-checked:bg-amber-100/90 peer-checked:shadow-sm transition text-sm shadow-sm hover:border-stone-500">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-5 h-5 rounded-lg border-2 border-stone-400 flex items-center justify-center peer-checked:bg-brand-700 peer-checked:border-brand-700">
+                      <i data-lucide="check" class="w-3.5 h-3.5 text-brand-700"></i>
+                    </div>
+                    <span class="font-black text-stone-950">Căruța Tradițională</span>
+                  </div>
+                  <p class="text-xs text-stone-600 font-medium mt-1.5 pl-7">Mezeluri de casă, brânzeturi, murături, pâine caldă.</p>
+                </div>
+              </label>
+
+              <label class="cursor-pointer">
+                <input type="checkbox" id="optJamon" value="Jamon Iberico Live Carving" checked class="peer sr-only">
+                <div class="p-4 rounded-2xl border-2 border-stone-300 bg-white peer-checked:border-brand-700 peer-checked:bg-amber-100/90 peer-checked:shadow-sm transition text-sm shadow-sm hover:border-stone-500">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-5 h-5 rounded-lg border-2 border-stone-400 flex items-center justify-center peer-checked:bg-brand-700 peer-checked:border-brand-700">
+                      <i data-lucide="check" class="w-3.5 h-3.5 text-brand-700"></i>
+                    </div>
+                    <span class="font-black text-stone-950">Jamon Iberico Show</span>
+                  </div>
+                  <p class="text-xs text-stone-600 font-medium mt-1.5 pl-7">Pulpă tăiată live pe suport + brânzeturi maturate.</p>
+                </div>
+              </label>
+
+              <label class="cursor-pointer">
+                <input type="checkbox" id="optProtap" value="Proțap / Grill Show" class="peer sr-only">
+                <div class="p-4 rounded-2xl border-2 border-stone-300 bg-white peer-checked:border-brand-700 peer-checked:bg-amber-100/90 peer-checked:shadow-sm transition text-sm shadow-sm hover:border-stone-500">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-5 h-5 rounded-lg border-2 border-stone-400 flex items-center justify-center peer-checked:bg-brand-700 peer-checked:border-brand-700">
+                      <i data-lucide="check" class="w-3.5 h-3.5 text-brand-700"></i>
+                    </div>
+                    <span class="font-black text-stone-950">Proțap Festiv</span>
+                  </div>
+                  <p class="text-xs text-stone-600 font-medium mt-1.5 pl-7">Purceluș / Berbecuț fript lent la jar.</p>
+                </div>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Pas 4: Locația și Numele -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="eventLocation" class="block text-xs uppercase tracking-wider font-extrabold text-stone-700 mb-1.5">
+                Localitatea sau Sala (ex. Timișoara, Reșița, Lugoj etc.)
+              </label>
+              <input type="text" id="eventLocation" placeholder="Ex: Timișoara / la cort"
+                     class="w-full bg-white border-2 border-stone-200 rounded-xl px-4 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-brand-600">
+            </div>
+            <div>
+              <label for="clientName" class="block text-xs uppercase tracking-wider font-extrabold text-stone-700 mb-1.5">
+                Numele tău (Opțional)
+              </label>
+              <input type="text" id="clientName" placeholder="Ex: Andrei & Maria"
+                     class="w-full bg-white border-2 border-stone-200 rounded-xl px-4 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-brand-600">
+            </div>
+          </div>
+
+          <!-- BUTON MARE VERDE WHATSAPP (Super Contrastant & Clar) -->
+          <div class="pt-4 text-center">
+            <button type="submit"
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-wa-green hover:bg-wa-hover text-white font-black text-lg px-10 py-5 rounded-2xl shadow-xl shadow-wa-green/40 hover:-translate-y-1 transition active:scale-95 cursor-pointer">
+              <!-- Official WhatsApp SVG -->
+              <svg class="w-7 h-7 fill-current flex-shrink-0" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>Trimite Configurația pe WhatsApp &rarr;</span>
+            </button>
+            <p class="text-stone-500 text-xs mt-3 flex items-center justify-center gap-1.5 font-medium">
+              <i data-lucide="shield" class="w-3.5 h-3.5 text-emerald-600"></i>
+              Fără obligații financiare. Mesajul se deschide gata compus direct în WhatsApp!
+            </p>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PACHETE RECOMANDATE: Carduri Luminoase & Transparență -->
+  <section id="pachete" class="py-24 bg-warm-50 relative border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-600 text-xs uppercase tracking-widest font-extrabold bg-white px-3 py-1 rounded-full border border-stone-200">Transparență & Flexibilitate</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900 mt-3 mb-4">Pachete Recomandate pentru Evenimente</h2>
+        <p class="text-stone-600 text-sm sm:text-base">Toate pachetele pot fi adaptate după gusturile dumneavoastră și specificul sălii sau locației.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Pachet 1: Clasic -->
+        <div class="bg-white rounded-3xl border border-stone-200 p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition">
+          <div>
+            <span class="text-xs uppercase tracking-widest font-bold text-brand-600">Pachetul Clasic</span>
+            <h3 class="font-serif text-2xl font-bold text-stone-900 mt-1 mb-3">La Vatra Străbună</h3>
+            <p class="text-stone-600 text-sm mb-6 leading-relaxed">Ideal pentru primirea călduroasă a nuntașilor și bufet tradițional de bun venit.</p>
+            
+            <div class="border-t border-stone-100 pt-6 mb-6">
+              <ul class="space-y-3 text-sm text-stone-700">
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Căruță din lemn complet decorată rustic</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Sortimente mezeluri tradiționale de casă</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Brânzeturi proaspete și maturate</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Pâine de casă cu maia & zacuscă</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Transport și montaj asigurat</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="javascript:void(0)" onclick="openWhatsApp('Bună! Aș dori detalii și preț pentru Pachetul Clasic «La Vatra Străbună».')"
+             class="block text-center py-3.5 px-6 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-800 font-bold text-sm transition">
+            Cere Detalii Pachet WhatsApp
+          </a>
+        </div>
+
+        <!-- Pachet 2: Recomandat / Boieresc Gourmet (VEDETĂ) -->
+        <div class="bg-white rounded-3xl border-2 border-brand-500 p-8 flex flex-col justify-between relative shadow-xl shadow-brand-500/15 transform md:-translate-y-2">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-500 to-brand-600 text-white text-xs font-black uppercase tracking-wider px-4 py-1 rounded-full shadow-md">
+            👑 Cel mai solicitat la nunți
+          </div>
+
+          <div>
+            <span class="text-xs uppercase tracking-widest font-extrabold text-amber-700">Pachetul Recomandat</span>
+            <h3 class="font-serif text-3xl font-bold text-stone-900 mt-1 mb-3">Boieresc & Jamon Show</h3>
+            <p class="text-stone-600 text-sm mb-6 leading-relaxed">Combinația perfectă între tradiție românească și rafinament gourmet internațional.</p>
+            
+            <div class="border-t border-amber-100 pt-6 mb-6">
+              <ul class="space-y-3 text-sm text-stone-700">
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
+                  <strong>Tot ce include pachetul clasic</strong>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
+                  <span>Pulpă Jamon la suport & Feliere Live</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
+                  <span>Platou brânzeturi nobile internaționale</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
+                  <span>Fructe proaspete, struguri, nuci & miere</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
+                  <span class="text-amber-800 font-bold bg-amber-50 px-2 py-0.5 rounded">Bonus: Degustare inclusă pentru miri!</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="javascript:void(0)" onclick="openWhatsApp('Bună! Vreau să aflu oferta pentru Pachetul «Boieresc & Jamon Show» (recomandat la nunți).')"
+             class="block text-center py-4 px-6 rounded-xl bg-wa-green hover:bg-wa-hover text-white font-extrabold text-sm shadow-md shadow-wa-green/30 transition">
+            Solicită pe WhatsApp Oferta Boierească
+          </a>
+        </div>
+
+        <!-- Pachet 3: VIP Festiv -->
+        <div class="bg-white rounded-3xl border border-stone-200 p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition">
+          <div>
+            <span class="text-xs uppercase tracking-widest font-bold text-brand-600">Pachetul All-Inclusive</span>
+            <h3 class="font-serif text-2xl font-bold text-stone-900 mt-1 mb-3">Sărbătoare Mare VIP</h3>
+            <p class="text-stone-600 text-sm mb-6 leading-relaxed">Pentru evenimente spectaculoase care vor ospăț boieresc complet până în zori.</p>
+            
+            <div class="border-t border-stone-100 pt-6 mb-6">
+              <ul class="space-y-3 text-sm text-stone-700">
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Bufet Tradițional + Jamon Live Show</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Opțiune Proțap Festiv la jar</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Personal dedicat pentru servire & platouri</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span>Decor extins din lemn & iluminat cald</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                  <span class="text-brand-700 font-semibold">Surpriză culinară inclusă pentru eveniment</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="javascript:void(0)" onclick="openWhatsApp('Bună! Aș dori informații pentru Pachetul VIP «Sărbătoare Mare».')"
+             class="block text-center py-3.5 px-6 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-800 font-bold text-sm transition">
+            Cere Ofertă VIP pe WhatsApp
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALERIE FOTO -->
+  <section id="galerie" class="py-24 bg-white border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-brand-600 text-xs uppercase tracking-widest font-extrabold bg-warm-100 px-3 py-1 rounded-full border border-stone-200">Atmosferă & Detalii</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900 mt-2">Imagini de la Evenimentele Noastre</h2>
+        </div>
+        <p class="text-stone-600 text-sm max-w-md mt-4 md:mt-0 leading-relaxed">
+          Urmărește pagina noastră oficială de Facebook pentru video-uri și fotografii săptămânale de la cele mai recente petreceri!
+        </p>
+      </div>
+
+      <!-- Grid Galerie - BLOC COMPACT DE IMAGINI -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-5xl mx-auto">
+        
+        <div class="relative group overflow-hidden rounded-2xl aspect-[4/3] shadow-sm border border-stone-200">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" 
+               alt="Platou carne tradițională" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-3.5">
+            <span class="text-white text-xs font-bold drop-shadow">Specialități afumate & mezeluri de casă</span>
+          </div>
+        </div>
+
+        <div class="relative group overflow-hidden rounded-2xl aspect-[4/3] shadow-sm border border-stone-200">
+          <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=700&q=80" 
+               alt="Bufet rustic nuntă" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-3.5">
+            <span class="text-white text-xs font-bold drop-shadow">Decor rustic complet pentru primirea invitaților</span>
+          </div>
+        </div>
+
+        <div class="relative group overflow-hidden rounded-2xl aspect-[4/3] shadow-sm border border-stone-200">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" 
+               alt="Pâine pe vatră" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-3.5">
+            <span class="text-white text-xs font-bold drop-shadow">Pâine artizanală coaptă pe vatră</span>
+          </div>
+        </div>
+
+        <div class="relative group overflow-hidden rounded-2xl aspect-[4/3] shadow-sm border border-stone-200">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80" 
+               alt="Carne la proțap" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-3.5">
+            <span class="text-white text-xs font-bold drop-shadow">Proțap rumenit lent la foc de jar</span>
+          </div>
+        </div>
+
+        <div class="relative group overflow-hidden rounded-2xl aspect-[4/3] shadow-sm border border-stone-200">
+          <img src="images/platouri-boieresti.jpg" 
+               onerror="this.src='https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=700&q=80'" 
+               alt="Platouri boierești" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-3.5">
+            <span class="text-white text-xs font-bold drop-shadow">Platouri boierești încărcate cu gust autentic</span>
+          </div>
+        </div>
+
+        <div class="relative group overflow-hidden rounded-2xl aspect-[4/3] shadow-sm border border-stone-200">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" 
+               alt="Nuntă atmosferă de sărbătoare" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-3.5">
+            <span class="text-white text-xs font-bold drop-shadow">Amintiri de neuitat pentru nunți și botezuri</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Buton Facebook cu Logo Oficial SVG -->
+      <div class="mt-10 text-center">
+        <a href="https://www.facebook.com/Gustuldincaruta27" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-3 bg-white hover:bg-blue-50/70 text-stone-900 border-2 border-stone-300 hover:border-[#1877F2] px-7 py-3.5 rounded-2xl text-sm font-extrabold shadow-sm hover:shadow-md transition group">
+          <!-- Official Facebook Brand Logo SVG -->
+          <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="#1877F2">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+          <span>Vezi mai multe poze și video-uri pe pagina de Facebook</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALE / CE SPUN CLIENȚII -->
+  <section class="py-20 bg-warm-50 border-t border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-14">
+        <span class="text-brand-600 text-xs uppercase tracking-widest font-extrabold bg-white px-3 py-1 rounded-full border border-stone-200">Părerea Mirilor</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Ce spun cei care au ales Gustul din Căruță</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-7 rounded-3xl bg-white border border-stone-200 shadow-sm space-y-4">
+          <div class="flex text-amber-500 gap-1">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-stone-600 text-sm italic leading-relaxed">
+            „Căruța a fost atracția principală a nunții noastre! Invitații au stat la coadă la Jamon și au lăudat calitatea mezelurilor toată noaptea. Recomandăm din tot sufletul!”
+          </p>
+          <div class="border-t border-stone-100 pt-3">
+            <span class="block font-bold text-stone-900 text-sm">Raluca & Dan</span>
+            <span class="block text-xs text-stone-500">Nuntă Timișoara</span>
+          </div>
+        </div>
+
+        <div class="p-7 rounded-3xl bg-white border border-stone-200 shadow-sm space-y-4">
+          <div class="flex text-amber-500 gap-1">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-stone-600 text-sm italic leading-relaxed">
+            „Aspectul căruței este impecabil, lemn nobil, decor rustic fără kitsch. Iar comunicarea pe WhatsApp a fost rapidă, ne-au răspuns imediat și am stabilit toate detaliile ușor.”
+          </p>
+          <div class="border-t border-stone-100 pt-3">
+            <span class="block font-bold text-stone-900 text-sm">Cosmin & Elena</span>
+            <span class="block text-xs text-stone-500">Nuntă Reșița</span>
+          </div>
+        </div>
+
+        <div class="p-7 rounded-3xl bg-white border border-stone-200 shadow-sm space-y-4">
+          <div class="flex text-amber-500 gap-1">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-stone-600 text-sm italic leading-relaxed">
+            „Am avut căruța la un botez cu 80 de persoane. Gustul produselor tradiționale este autentic, nu seamănă cu nimic din comerț. Oamenii chiar știu ce fac!”
+          </p>
+          <div class="border-t border-stone-100 pt-3">
+            <span class="block font-bold text-stone-900 text-sm">Florin M.</span>
+            <span class="block text-xs text-stone-500">Botez Caraș-Severin</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ - ÎNTREBĂRI FRECVENTE -->
+  <section id="faq" class="py-24 bg-white border-t border-stone-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16">
+        <span class="text-brand-600 text-xs uppercase tracking-widest font-extrabold bg-warm-100 px-3 py-1 rounded-full border border-stone-200">Informații Utile</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900 mt-2 mb-3">Întrebări Frecvente</h2>
+        <p class="text-stone-600 text-sm sm:text-base">Tot ce trebuie să știi înainte de a rezerva căruța pentru evenimentul tău.</p>
+      </div>
+
+      <div class="space-y-4" id="faqAccordion">
+        
+        <!-- FAQ 1 -->
+        <div class="border border-stone-200 rounded-2xl bg-warm-50 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-stone-900 flex justify-between items-center gap-4 hover:bg-stone-100 transition" onclick="toggleFaq(this)">
+            <span>Cu cât timp înainte trebuie să rezervăm data?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 transition transform"></i>
+          </button>
+          <div class="p-5 pt-0 text-stone-600 text-sm leading-relaxed border-t border-stone-200/50 hidden">
+            Pentru nunți în sezonul cald (mai - octombrie), recomandăm rezervarea cu cel puțin 6 - 12 luni înainte. Avem deja rezervări deschise și confirmate pentru anii 2027 și 2028. Dacă data dorită este într-o duminică sau în timpul săptămânii, disponibilitatea este mai flexibilă.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="border border-stone-200 rounded-2xl bg-warm-50 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-stone-900 flex justify-between items-center gap-4 hover:bg-stone-100 transition" onclick="toggleFaq(this)">
+            <span>În ce zone și orașe vă deplasați?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 transition transform"></i>
+          </button>
+          <div class="p-5 pt-0 text-stone-600 text-sm leading-relaxed border-t border-stone-200/50 hidden">
+            Ne deplasăm în tot județul Caraș-Severin, Timiș, Arad, Hunedoara și în zonele învecinate din vestul țării. În funcție de distanță, stabilim pe WhatsApp toate detaliile legate de transport și oră de montaj.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="border border-stone-200 rounded-2xl bg-warm-50 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-stone-900 flex justify-between items-center gap-4 hover:bg-stone-100 transition" onclick="toggleFaq(this)">
+            <span>Cum funcționează degustarea pentru miri?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 transition transform"></i>
+          </button>
+          <div class="p-5 pt-0 text-stone-600 text-sm leading-relaxed border-t border-stone-200/50 hidden">
+            Pachetele noastre includ o sesiune de degustare specială pentru viitorii miri, unde puteți testa mezelurile, sortimentele de brânză și calitatea Jamonului, pentru a personaliza meniul exact pe gustul vostru.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="border border-stone-200 rounded-2xl bg-warm-50 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-stone-900 flex justify-between items-center gap-4 hover:bg-stone-100 transition" onclick="toggleFaq(this)">
+            <span>Căruța se poate monta și în interiorul sălii de evenimente?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 transition transform"></i>
+          </button>
+          <div class="p-5 pt-0 text-stone-600 text-sm leading-relaxed border-t border-stone-200/50 hidden">
+            Da! Căruța noastră este proiectată pentru a fi montată atât pe terase / în curtea locației, cât și în foaierul sau interiorul restaurantelor și corturilor de evenimente, integrându-se spectaculos în decor.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="border border-stone-200 rounded-2xl bg-warm-50 overflow-hidden">
+          <button class="w-full p-5 text-left font-bold text-stone-900 flex justify-between items-center gap-4 hover:bg-stone-100 transition" onclick="toggleFaq(this)">
+            <span>Cum facem rezervarea și cum comunicăm?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 transition transform"></i>
+          </button>
+          <div class="p-5 pt-0 text-stone-600 text-sm leading-relaxed border-t border-stone-200/50 hidden">
+            Comunicăm direct și rapid prin <strong>WhatsApp</strong>! Ne trimiteți data, locația și numărul de invitați, vă confirmăm disponibilitatea în calendar și vă trimitem oferta dedicată.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BANNER FINAL CTA WHATSAPP -->
+  <section class="py-20 bg-gradient-to-b from-warm-100 via-amber-50/70 to-white relative border-t border-stone-200 text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="w-20 h-20 rounded-full bg-wa-green text-white flex items-center justify-center mx-auto mb-6 shadow-xl shadow-wa-green/30 wa-pulse">
+        <svg class="w-10 h-10 fill-current" viewBox="0 0 24 24">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+      </div>
+
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-900 mb-4">
+        Hai să povestim despre evenimentul tău!
+      </h2>
+      
+      <p class="text-stone-600 max-w-xl mx-auto mb-8 text-base sm:text-lg">
+        Scrie-ne acum direct pe WhatsApp. Răspundem prompt cu fotografii suplimentare, disponibilitate în calendar și toate detaliile necesare.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="javascript:void(0)" onclick="openWhatsApp('Bună ziua! Doresc o ofertă pentru evenimentul meu din sezonul 2026/2027.')"
+           class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-wa-green hover:bg-wa-hover text-white font-black text-lg px-8 py-4 rounded-2xl shadow-xl shadow-wa-green/30 hover:-translate-y-1 transition">
+          <svg class="w-6 h-6 fill-current flex-shrink-0" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>Scrie-ne acum pe WhatsApp</span>
+        </a>
+
+        <a href="https://www.facebook.com/Gustuldincaruta27" target="_blank" rel="noopener noreferrer"
+           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-stone-50 text-stone-800 border-2 border-stone-200 px-6 py-4 rounded-2xl text-sm font-bold transition">
+          <i data-lucide="facebook" class="w-4 h-4 text-[#1877F2]"></i>
+          <span>Pagina de Facebook</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER LUMINOS -->
+  <footer class="bg-white text-stone-500 text-xs py-12 border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-amber-100 text-brand-600 flex items-center justify-center">
+          <i data-lucide="utensils" class="w-4 h-4"></i>
+        </div>
+        <div>
+          <span class="block font-serif text-stone-900 font-bold text-sm">Gustul din Căruță SRL</span>
+          <span class="text-stone-500">Servicii catering festiv & căruță tradițională gourmet</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6 text-stone-600 font-medium">
+        <a href="https://www.facebook.com/Gustuldincaruta27" target="_blank" class="hover:text-brand-600 transition">Facebook</a>
+        <a href="javascript:void(0)" onclick="openWhatsApp('Contact Gustul din Căruță')" class="hover:text-wa-green transition">WhatsApp</a>
+        <a href="#calculator" class="hover:text-brand-600 transition">Configurator</a>
+      </div>
+
+      <div class="text-stone-500 text-center sm:text-right">
+        <span>© 2026 Gustul din Căruță. Toate drepturile rezervate.</span>
+        <div class="text-[11px] text-stone-400 mt-0.5">Machetă de prezentare creată pentru ofertare</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (DESKTOP & MOBIL - ULTRA VIZIBIL) -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <!-- Bubble text animat -->
+    <div id="waTooltip" class="hidden sm:flex items-center gap-2 bg-white text-stone-900 border-2 border-wa-green px-4 py-2 rounded-2xl shadow-xl text-xs font-bold animate-bounce">
+      <span class="w-2.5 h-2.5 rounded-full bg-wa-green animate-ping"></span>
+      <span>Suntem online pe WhatsApp!</span>
+    </div>
+
+    <!-- Buton Rotund Mare Verde WhatsApp cu SVG oficial -->
+    <a href="javascript:void(0)" onclick="openWhatsApp('Bună! Vă scriu de pe site, aș dori să aflu disponibilitatea pentru un eveniment.')"
+       class="w-16 h-16 rounded-full bg-wa-green hover:bg-wa-hover text-white flex items-center justify-center shadow-2xl shadow-wa-green/50 hover:scale-110 active:scale-95 transition transform group wa-pulse cursor-pointer"
+       title="Contact WhatsApp">
+      <svg class="w-9 h-9 fill-current" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- SCROLL TO TOP BUTTON (Apare automat la scroll) -->
+  <button id="scrollTopBtn" onclick="scrollToTop()"
+          class="fixed bottom-24 right-6 z-40 w-12 h-12 rounded-full bg-white text-stone-700 border-2 border-stone-200 hover:border-brand-500 hover:text-brand-600 flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 opacity-0 pointer-events-none transform translate-y-4"
+          title="Mergi sus">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- STICKY MOBILE BOTTOM BAR -->
+  <div class="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-t border-stone-200 p-2.5 flex gap-2 shadow-2xl">
+    <a href="#calculator" class="flex-1 bg-stone-100 hover:bg-stone-200 text-stone-800 font-bold text-xs py-3 rounded-xl border border-stone-300 text-center flex items-center justify-center gap-1.5">
+      <i data-lucide="calculator" class="w-4 h-4 text-brand-600"></i>
+      <span>Calculează</span>
+    </a>
+    <a href="javascript:void(0)" onclick="openWhatsApp('Bună! Sunt interesat de disponibilitatea căruței pentru evenimentul meu.')"
+       class="flex-1 bg-wa-green hover:bg-wa-hover text-white font-black text-xs py-3 rounded-xl text-center flex items-center justify-center gap-2 shadow-md shadow-wa-green/30">
+      <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span>Scrie pe WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- SCRIPT LOGICĂ & INTERACTIVITATE -->
+  <script>
+    // Număr WhatsApp Principal (Poate fi configurat aici)
+    const WHATSAPP_PHONE = '40700000000';
+
+    // Funcție deschidere WhatsApp cu text dinamic
+    function openWhatsApp(customText) {
+      const encodedText = encodeURIComponent(customText);
+      const url = `https://wa.me/${WHATSAPP_PHONE}?text=${encodedText}`;
+      window.open(url, '_blank');
+    }
+
+    // Funcție gestionare formular configurator
+    function handleFormSubmit(e) {
+      e.preventDefault();
+
+      const eventType = document.querySelector('input[name="eventType"]:checked')?.value || 'Nuntă';
+      const guestCount = document.getElementById('guestRange').value;
+      const exactDate = document.getElementById('exactEventDate').value;
+      const period = document.getElementById('eventPeriod').value;
+      const location = document.getElementById('eventLocation').value || 'Locație nestabilită încă';
+      const clientName = document.getElementById('clientName').value || 'Viitor client';
+
+      // Colectare servicii bifate
+      const selectedServices = [];
+      if (document.getElementById('optTrad').checked) selectedServices.push('Căruță Tradițională');
+      if (document.getElementById('optJamon').checked) selectedServices.push('Jamon Iberico Live Show');
+      if (document.getElementById('optProtap').checked) selectedServices.push('Proțap Festiv');
+
+      const servicesText = selectedServices.length > 0 ? selectedServices.join(', ') : 'Pachet Standard';
+
+      // Formatare dată exactă sau sezon
+      let dateInfo = '';
+      if (exactDate) {
+        const parts = exactDate.split('-');
+        dateInfo = `Dată fixă: ${parts[2]}.${parts[1]}.${parts[0]}`;
+        if (period) dateInfo += ` (${period})`;
+      } else if (period) {
+        dateInfo = `Perioadă / Sezon: ${period}`;
+      } else {
+        dateInfo = `Perioadă: În curs de stabilire`;
+      }
+
+      // Construire mesaj prietenos pentru WhatsApp
+      const message = `Bună ziua Gustul din Căruță! 🍷\n\n` +
+        `Numele meu este ${clientName} și aș dori o ofertă pentru un eveniment configurat pe site:\n` +
+        `• Tip Eveniment: ${eventType}\n` +
+        `• Număr Invitați: ${guestCount} persoane\n` +
+        `• ${dateInfo}\n` +
+        `• Locație: ${location}\n` +
+        `• Servicii dorite: ${servicesText}\n\n` +
+        `Aveți disponibilitate în calendar și îmi puteți trimite oferta detaliată? Mulțumesc!`;
+
+      openWhatsApp(message);
+    }
+
+    // FAQ Accordion Toggle
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('i');
+      const isHidden = content.classList.contains('hidden');
+
+      // Închide toate
+      document.querySelectorAll('#faqAccordion > div > div').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('#faqAccordion button i').forEach(ic => ic.classList.remove('rotate-180'));
+
+      // Deschide doar cel selectat dacă era ascuns
+      if (isHidden) {
+        content.classList.remove('hidden');
+        if (icon) icon.classList.add('rotate-180');
+      }
+    }
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+      });
+    }
+
+    // Scroll to Top Logic
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+        scrollTopBtn.classList.add('opacity-100', 'translate-y-0');
+      } else {
+        scrollTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+        scrollTopBtn.classList.remove('opacity-100', 'translate-y-0');
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Inițializare Icons Lucide
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    });
+  </script>
+
+</body>
+</html>
